@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Schedule
+  datasource:
+    username: "myuser"
+    password: "secret"
+    url: "jdbc:postgresql://localhost:5432/schoolapi"
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: PostgreSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8080
